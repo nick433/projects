@@ -1,7 +1,7 @@
 -------------TESTPLAN---------------
 
 
-To use our bank server/client, you need to run both, order does not matter, the client waits for a server. To connect to localhost with the client, make the argument <localhost>. So < ./client localhost>
+To use the bank server/client, you need to run both, order does not matter, the client waits for a server. To connect to localhost with the client, make the argument <localhost>. So < ./client localhost>
 
 Once connected, the client can type open with a name < open name >, start with a name, or exit. Once in a customer account session, you can credit, debit, or check your balance. Typing 'finish' will log you out of your account and allow you to do open, start, or exit.
 
