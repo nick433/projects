@@ -1,7 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<ctype.h>
-#include "seq.h"
 
 int getbin(int gray);
 int getgray(int bin);
