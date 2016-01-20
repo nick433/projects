@@ -1,0 +1,184 @@
+Test Cases
+
+Input: 
+open me 
+start me 
+balance
+
+Expected output:
+Server: Opening Account...
+Account made
+Server: Enter another command
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw funds; or finish to exit the session.
+Enter a message: >>
+Server: Your account balance: $0.00
+Enter a message: >>
+
+output:
+Server: Opening Account...
+Account made
+Server: Enter another command
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw funds; or finish to exit the session.
+Enter a message: >>
+Server: Your account balance: $0.00
+Enter a message: >>
+
+
+Input: 
+start Carlton
+
+Expected output:
+arg is Carlton.
+Server: Attempting to start your account session...
+No accounts by that name
+Enter a message: >>
+Server: Opening Account...
+
+output:
+Server: Opening Account...
+Account made
+Server: Enter another command
+
+Input:
+open a
+start a
+credit 12
+balance
+
+Expected output:
+arg is a.
+Server: Opening account...
+Account made
+Server: Enter another command
+Server: Attempting to start your account session...
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw funds ; or finish to exit the session.
+arg is 12.
+validFloat recieved the string 12
+Server: Crediting your account.
+Enter a message: >>
+Server: Your account balance: $12.00
+Enter a message: >>
+
+Output:
+arg is a.
+Server: Opening account...
+Account made
+Server: Enter another command
+Server: Attempting to start your account session...
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw funds ; or finish to exit the session.
+arg is 12.
+validFloat recieved the string 12
+Server: Crediting your account.
+Enter a message: >>
+Server: Your account balance: $12.00
+Enter a message: >>
+
+
+Input:
+open z
+start z
+debit 1
+
+Expected Output:
+Enter a message: >>open z
+arg is z.
+Server: Opening account...
+Server: Account made
+
+
+Server: Enter another command
+
+Enter a message: >>
+
+Server: Attempting to start your account session...
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw funds; or finish to exit the session.
+Enter a message: >>
+arg is 1.
+validFloat recieved the string 1
+Server: Attempting to debit your account.
+Debiting unsuccessful. Insufficient funds.
+
+Input:
+open qwer
+start qwer
+credit 2
+debit 1
+balance
+finish
+exit
+
+Expected Output:
+Server: Opening account...
+An account by that name already exists
+
+Server: Enter another command
+
+Enter a message: >>
+arg is qwer.
+Server: Attempting to start your account session...
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw fu or finish to exit the session.
+Enter a message: >>
+arg is 2.
+validFloat recieved the string 2
+Server: Crediting your account.
+Enter a message: >>
+arg is 1.
+validFloat recieved the string 1
+Server: Attempting to debit your account.
+debiting successful.
+
+Enter a message: >>
+Server: Your account balance: $2.00
+Enter a message: >>
+Server: Finishing session. Have a nice day.
+Enter a message: >>
+Server: Exiting bank, thank you for choosing Nick n Ed's banking :)
+
+
+
+
+
+
+______________________
+
+Closing client window.
+______________________
+
+Enter a message: >>
+arg is qwer.
+Server: Attempting to start your account session...
+Welcome to your session.
+Type balance to see your amount; credit or debit to deposit or withdraw fu or finish to exit the session.
+Enter a message: >>
+arg is 2.
+validFloat recieved the string 2
+Server: Crediting your account.
+Enter a message: >>
+arg is 1.
+validFloat recieved the string 1
+Server: Attempting to debit your account.
+debiting successful.
+
+Enter a message: >>
+Server: Your account balance: $2.00
+Enter a message: >>
+Server: Finishing session. Have a nice day.
+Enter a message: >>
+Server: Exiting bank, thank you for choosing Nick n Ed's banking :)
+
+
+
+
+
+
+______________________
+
+Closing client window.
+______________________
+
