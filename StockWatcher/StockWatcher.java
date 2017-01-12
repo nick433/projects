@@ -234,8 +234,8 @@ public class StockWatcher implements Runnable{
 				//create the POP3 store object and connect with the pop server
 				Store store = emailSession.getStore("pop3s");
 	
-				store.connect("imap.gmail.com", "mangomailbot@gmail.com",
-						"qwerqwer1234");
+				store.connect("imap.gmail.com", "GMAIL",
+						"PASSWORD");
 	
 				//create the folder object and open it
 				Folder emailFolder = store.getFolder("INBOX");
@@ -290,8 +290,8 @@ public class StockWatcher implements Runnable{
     
    public static void send(String msg){
     	
-    	final String username = "mangomailbot@gmail.com";
-		final String password = "qwerqwer1234";
+    	final String username = "GMAIL";
+		final String password = "PASSWORD";
  
 		Properties props = new Properties();
 		props.put("mail.smtp.auth", "true");
@@ -311,7 +311,7 @@ public class StockWatcher implements Runnable{
 			Message message = new MimeMessage(session);
 			message.setFrom(new InternetAddress(username));
 			message.setRecipients(Message.RecipientType.TO,
-				InternetAddress.parse("7328500309@vtext.com")); //kevins phone lol: 8482193579@tmomail.net
+				InternetAddress.parse("xxxxxxxxxxx")); //phone number
 			//message.setSubject("Testing Subject"); //check if this can be removed
 			message.setText(msg);
  
@@ -348,11 +348,11 @@ public class StockWatcher implements Runnable{
 	    	WebElement element = driver.findElement(By.name("noArea"));
 	    	element.sendKeys(Keys.TAB);
 	    	Thread.sleep(1000);
-	    	element.sendKeys("732");
+	    	element.sendKeys("732"); //area code
 	    	Thread.sleep(1000);
 	
 	    	
-	    	driver.findElement(By.name("noNumb")).sendKeys("8500309");
+	    	driver.findElement(By.name("noNumb")).sendKeys("xxxxxxx"); //phone number
 	    	Thread.sleep(1000);
 	    	driver.findElement(By.name("noArea")).sendKeys(Keys.ENTER);
 	    	Thread.sleep(10000);
@@ -370,7 +370,7 @@ public class StockWatcher implements Runnable{
 	    	driver.get("http://www.callmylostphone.com/");
 	    	WebElement element = driver.findElement(By.name("recipient"));
 	
-	    	element.sendKeys("7328500309");
+	    	element.sendKeys("xxxxxxxxxx"); //phone number
 	    	element.submit();	
 	    	Thread.sleep(2000);             
 	    	
