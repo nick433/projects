@@ -1,1 +1,1 @@
-# RU-projects
+# projects
