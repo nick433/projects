@@ -34,7 +34,7 @@ public class StockWatcher implements Runnable{
     public static void stub(){
     	try{ 
     		String url = "jdbc:mysql://localhost:3306/databases?autoReconnect=true&useSSL=false";
-    		Connection conn = DriverManager.getConnection(url, "root", "Nicholas9"); //password for the 
+    		Connection conn = DriverManager.getConnection(url, "root", "xxxxx9"); //password for the 
     		
     		Statement stmt = conn.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_UPDATABLE);
 
@@ -67,7 +67,7 @@ public class StockWatcher implements Runnable{
 	    				System.out.println("data wasnt 0");
 	    				StringTokenizer queries = new StringTokenizer(data2);
 	    				if(!queries.hasMoreElements() ){
-							send("You fucked up the syntax. Example: .a abc 2 b n == *period ticker add/delete price above/belowthat call?");
+							send("incorrect syntax Example: .a abc 2 b n == *period ticker add/delete price above/belowthat call?");
 						}
 	    				
 	    				String choice = queries.nextToken();
