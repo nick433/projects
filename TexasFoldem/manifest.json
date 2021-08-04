@@ -6,9 +6,6 @@
     "icons": {
         "128": "spade-icon-128.png"
     },
-    "background": {
-        "scripts": ["./background.js"]
-    },
     "options_page": "./options.html",
     "browser_action": {
         "default_icon": "spade-icon-30.png",
