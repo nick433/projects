@@ -1,0 +1,15 @@
+AA, KK, QQ, JJ, TT, 99, 88, 77, 66, 55, 44, 33, 22,
+AKs, AQs, AJs, ATs, A9s, A8s, A7s, A6s, A5s, A4s, A3s, A2s,
+KQs, KJs, KTs, K9s, K8s, K7s, K6s, K5s, K4s, K3s, K2s,
+QJs, QTs, Q9s, Q8s, Q7s, Q6s, Q5s, Q4s, Q3s, Q2s
+JTs, T9s, 98s, 87s, 76s, 65s, 54s, 43s,
+J9s, T8s, 97s, 86s, 75s, 64s, 53s, 42s, 74s,
+J8s, J7s, J6s, J5s, J/4s
+T7s, T6s, T/5s, T/4s,
+AKo, AQo, AJo, ATo, A9o, A8o, A7o, A6o, A5o, A4o, A3o, A2o,
+KQo, KJo, KTo, K9o, K8o, K7o, K6o, K5o, K4o, K/3o, K/2o
+QJo, QTo, Q9o, Q8o, Q/7o 
+JTo, J9o, J/8o, J/7o
+T9o, T8o, 98o, 8/7o, 7/6o, 
+96s, 8/5s, 9/5s
+

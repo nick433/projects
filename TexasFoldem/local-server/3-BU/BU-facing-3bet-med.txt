@@ -1,0 +1,9 @@
+AA, KK, QQ, JJ, TT, 99, 88, 77, 66, 55,
+AKs, AQs, AJs, ATs, A5s, A4s, A3s, A2s,
+KQs, KJs,
+QJs, QTs
+JTs, T9s, 98s, 87s, 76s
+J9s, T8s
+AKo, AQo, AJo,
+KQo
+
