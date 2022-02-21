@@ -22,8 +22,6 @@ print(l)
 goal = float(totalCost/numPeople)
 goal = float("{0:.2f}".format(goal))
 print()
-print("goal: " + str(goal))
-print()
 finishList = []
 
 awayList = []
@@ -63,4 +61,4 @@ while(i<numPeople):
 		j+=1
 	i+=1
 	j=0
-print()
+print("Everyone has equally contributed $" + str(goal) + " to cover a total cost of $" + str(totalCost))
