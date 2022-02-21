@@ -50,8 +50,10 @@ while finished<numPeople and i!=endPos:
 
 
 print(l)
-i = 0	
 print()
+print("-----------------------------------------------------")
+print()
+i = 0
 while(i<numPeople):
 	j = 0
 	while(j<numPeople):
