@@ -1,6 +1,6 @@
 import sys
 
-numPeople = int(input("how many people?\n"))
+numPeople = int(input("how many people to split between?\n"))
 i = 1
 l = []
 totalCost = 0
