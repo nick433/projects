@@ -1,0 +1,17 @@
+{
+   "action": {
+      "default_icon": "spade-icon-30.png",
+      "default_popup": "popout.html"
+   },
+   "description": "Nit yourself a sweater.",
+   "icons": {
+      "128": "spade-icon-128.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAyQq+/3PBzGrkvhDQ7SlkX5+g9E7Fbt4E/zplW7dSU3hkKj/Zc+M6IwfMYgX7cq+LFgpTsaGtpE27wk4nIZbt+w5YK25FCN3jIWRCFvL2XW//ldc+8MW7ZvFCBo2qBKlKnRfEtOa76G/yofH2Fjmu6KoogcLllxOjRghYrdqgDCMhYJJnQvKmlLnYDlLynAYwCUr21EV5Ae05a8w8up3EwIxxOxwwiupg2iWJ1czY0IBvAAqLObsxQu9A3ed3ja/dDBKaCgp3AWQ07iih34Owu4po2FuOJFzn0nkjDUDfJC/CM6iYcQg+0CU6ThiVbu7DEhLncTQCQZ2D7YZ8H7BoowIDAQAB",
+   "manifest_version": 3,
+   "name": "Texas Fold'em - BETA",
+   "options_page": "./options.html",
+   "permissions": [ "storage", "https://www.pokernow.club/games/*", "scripting", "activeTab" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.3.2"
+}

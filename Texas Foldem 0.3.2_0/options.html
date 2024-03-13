@@ -1,0 +1,271 @@
+<style>
+    body {
+        font-size: large;
+    }
+
+    button {
+        padding: 8px 15px;
+        margin: 10px;
+        margin-left: 25px;
+        background-color: white;
+        color: black;
+        outline: none;
+        border-radius: 9px;
+        border-color: black;
+    }
+</style>
+
+<body>
+    <div>
+        <h1 style="text-align: center;">Texas Fold'em - Options</h1>
+        <p>
+        <h2>Configuration</h2>
+        </p>
+
+        <p>
+            <label for="customRangeAddress" style="padding-right: 20px">Custom range ID (ask me for this):</label>
+
+            <input style="height: 1.9em; font-size: 1.1em;" type="text" id="customRangeAddress"
+                name="customRangeAddress" required size="50">
+
+            <button id="save-range-address">SET</button> <mark>Developer Contact</mark>- Discord (prefered) : dsmith#4112 &mdash; email: dsmith22295@gmail.com
+        </p>
+        <p>
+            <label for="userKey" style="padding-right: 87px">User key (ask me for this):</label>
+
+            <input style="height: 1.9em; font-size: 1.1em;" type="text" id="userKey" name="userKey" required
+                size="50">
+
+            <button id="save-user-key">SET</button> 
+            <br>
+            <span style="margin-left:120px">*** Use 476870725564716A6876 for demo user key</span>
+
+        </p>
+        Note that any changes to configuration/options will require the browser tab to be refreshed and the script to be restarted
+        <br>
+        
+        
+      
+        <br>//TODO future update is to make sure it can only pause 
+
+        <p></p>
+
+        // dropdown goes here which will be every position, followed by a second dynamiccally loaded dropdown of the
+        ranges (SB-facing-3bet, SB-open, SB-facing-2bet) <br>
+        // once those are selected user will click the 'set range' button which pops up a new window with a graphic grid
+        representing all hands with<br>
+        // tiles that can be highlighted (green = allow) and unhighlighted by clicking the individual tiles. We will
+        pass to this the title. It will have a save button<br>
+
+    </div>
+
+    <br>
+    <div style="max-width: 1000px">
+
+        <span style="font-weight: bold"> <input id="stop-when-bp-mentioned" type="checkbox"> Check box to pause texas foldem when someone in chat mentions a bombpot or "bp" </span> 
+         <br>
+        Someone might say these keywords in chat if one is about to happen 
+        Note: if playing on mobile and you are unable to reset the app manually via refreshing the browser and hitting run again, you can just send a single period ( . ) and nothing else in chat and it will continue the script.
+        <p></p>
+
+        <span style="font-weight: bold"> <input id="stop-when-room-paused" type="checkbox"> Check box to pause texas foldem when room owner pauses the game </span>
+        Common for owners of games to pause to notify the table that a bombpot(bp) is happening on the next hand. 
+        <br> *** There exists a minor defect from this option where every hand that goes by will have the game count a pause and show the message "waiting for owner"
+         <br>
+
+
+        <h3>It's not working? </h3> You might have to still read the important information below (don't skip it) and
+        <span style="font-weight: bold"> check
+        the checkbox acknowledging you've read it and agree. </span>
+        <br>
+        <br>If that's not the issue, hit F-12 (or right-click the page and hit inspect then navigate to console tab) and
+        see if the console has any red errors talking about CORS issues.
+        If this is the case install this <a style="font-size: 1.3em; font-weight: bold;"
+            href="https://chrome.google.com/webstore/detail/cors-unblock/lfhmikememgdcahcdlaciloancbhjino?hl=en">
+            extension</a> and then click on the extension to enable it
+        <br>
+        You will see a yellow 'c' appear on the extension icon when it is active
+        <br>
+        <br>
+        Another reason it might not be working is because you were not seated at the table yet, or the game wasn't
+        started when you clicked 'run'. Just hit run again.
+
+        <h1>About this extension</h1>
+
+        This is currently a beta release with standardized ranges that reasonable players would play from each position.
+
+        <br>
+        <br>
+        Important disclaimer thing: <span style="font-weight: bold"> Keep this on the DL. Seriously. </span> It is in the best interest of myself,
+        you, and every
+        competent poker player to not reveal the existence of this extension EXCEPT to other regs who you know irl that
+        you trust
+        would keep their mouths shut about this.
+        <br><br> Even if you can logically arrive at this obviously not counting as cheating
+        because it's just folding junk hands pre-flop,
+        you will never be able to get everyone else to feel that way. Even if they *get it* they won't like the
+        implication that
+        this has for the game as a whole. Oh and if the moderators know you are using this it might be more than
+        just negative sentiment and lower winrate that you'll have to worry about. If this becomes widespread and known
+        about, Recreational players may very well feel like this is killing the
+        fun of poker with everyone just playing "optimally" making them feel like why should they even bother playing
+        just
+        for fun anymore. Or they will just barely understand anything about it and think it's cheating. <div style="height: 15px"></div> Maybe the idea
+        of a profitably optimal preflop range based on position hasn't occurred to them so now you've tanked your game's profitability just
+        by more players becoming aware of
+        the concept of preflop ranges affecting you and your reg friends' overall profitability. There is seriously no
+        good that will come from
+        sharing the fact that you use this with
+        anyone. In fact, you can't even use this extension if you don't check the box below.
+        <br>
+        <br>
+        <mark>I have read the above block of text starting at "About this extension" and I understand and agree that widespread knowledge of this would be bad
+        profit-wise and reputation-wise for me, the seasoned skilled player,
+        and the poker community as a whole. I agree to not share the fact that I use this or link it to other players as it will be detrimental to my winrate if spewers start nitting sweaters
+        </mark> <input id="checkbox-agreement" type="checkbox"> (check this box)
+
+        <br>
+        <br>
+        <p>
+        <h3> Why is this so awesome?</h3>
+        </p>
+        If you are trying to battle it out and play more hands, don't use this. But if you are multitasking with 1 or
+        more
+        poker tables while writing your college essay or doing work where longer intervals of uninterrupted attention
+        would be valuable,
+        this extension is for you. You would have longer intervals of attention toward those important tasks
+        without hearing the *beep* it's-your-turn noise when you get 82offsuit the 3rd time this orbit, throwing off
+        your focus and requiring you to
+        navigate to the monitor with the table and hitting fold again &mdash; only to do the same thing on the next hand
+        30 seconds later.
+        <br><br> Maybe you have just one table open and are trying to play a video game and don't hear the first beep
+        until the timer
+        gets to the louder 3 beeps before folding. Good job you just held up the action again.
+        <br><br> If only there was a way to have the junk hands which you would always fold anyway just fold on their
+        own so you can
+        go longer without your focus being broken on your work task (or show on netflix)
+        <br><br>
+
+        <br>
+        **************************************************************
+        <br>
+
+        There's still occasional bugs being discovered or worked on but you don't have to worry about your aces being
+        yeeted for no reason. If that happens contact me IMMEDIATELY and I can check the error-logs, hasn't happened to
+        me in the hundred+ hours using this
+        <br>
+        <br>
+        The entire extension may break and require an update if the developer of pokernow makes updates which change the
+        IDs for the elements on page or changes the order of sub-elements. Has happened a few times already. Contact me
+        if the entire extension is broken.
+        <br>
+
+    </div>
+
+    <p>
+    <h3> More Info</h3>
+    </p>
+    <ul>
+        <li style="max-width: 1100px">
+            Everyone using this will have the same default ranges. The ability to select custom ranges will be a very
+            involved feature to add as there are many considerations
+            such as allowing users to set a custom button-defending range vs each position before it.
+        </li> <br>
+        <li style="max-width: 1100px">
+            ********************************************************<br>
+            The script will not raise or call for you, only fold in spots in which the user would ALWAYS be folding
+            anyway, so a "bot" like this *should* be considered legal for most games but explaining
+            that to people will be tedious and cause a headache or a ban so it's best you stfu about using this
+            <br>
+            ********************************************************
+        </li> <br>
+
+    </ul>
+
+    <p>
+    <h3> "Bugs"</h3>
+    </p>
+
+    <ul style="max-width: 1100px">
+        <li>
+            Sometimes when we call a single-raised pot from BB, because of the pot-size mutation observer, we will
+            sometimes hit fold
+            as soon as we call as it considers our own call as a 3bet. It's on the to-dos to fix this. But usually this
+            doesn't matter because either A. We are closing the action so nothing happens (and would fold our
+            non-3bettable hand
+            to a backraise anyway). This could become an issue if we flat 76s and then one of the limpers decides to
+            min-3bet and everyone else calls pricing us in.
+            If this happens we can react to the fold-button turning red anyway so it's a low-priority bug
+        </li> <br>
+        <li>
+            UTG will always have the beeping noise because the script takes between a third of a second and 1.5 seconds
+            (randomized)
+            to fold each hand [won't be fixing this btw]
+        </li> <br>
+        <li>
+            Playing with straddles still occasionally will cause silent errors but the worst case scenario is that a hand
+            that
+            should be auto-folded preflop ends up not being folded
+        </li> <br>
+        <li>
+            This isn't really even a bug but the run button will still show the activation color even if it fails to
+            run.. just something to note
+        </li> <br>
+
+    </ul>
+
+    <p>
+    <h3> Future features</h3>
+    </p>
+
+    <ul>
+        <li style="max-width: 1100px">
+            You can start the extension while the game is idle/not started yet and regardless if you are seated or not.
+            This usually makes an error because the script needs to detect the dealer-button on the table; which is why the script will
+            always fail when there is a dead button since it's classified as a different element. I could debug this but it could take 
+            me 2ish hours or so and it's such a rare edge-case - you can just fold that single hand on your own. 
+        </li>  <br>
+        <li style="max-width: 1100px">
+            A little checkbox on the bottom left of the screen above the log/ledger button which allows you to
+            automatically stand before you post your next BB
+        </li> <br>
+        <li style="max-width: 1100px">
+            Be able to be more selective with continuing hands facing 3bets/4bets. For now all pocket-pairs will not
+            auto-fold facing 3bets.
+            <br> We also need to be more distinctive of whether or not the 3bet we are facing with pocket 6s is cold or
+            is it against our 2bet?
+        </li> <br>
+        <li style="max-width: 1100px">
+            Position-dependant continuing ranges <br>
+            Ex: You might defend BB with A6o vs 4bb CO open but fold it to EP open. You might not fold AJo at SB vs HJ
+            open but might want to fold it vs EP open
+        </li> <br>
+        <li style="max-width: 1100px">
+            Being able to set custom ranges for each of the position v position situations. Maybe with some range chart
+            drop-down. Each user of the extension will need a way to save their custom ranges
+            which makes this much more complicated than just having my own hard-coded ranges.
+        </li> <br>
+        <li style="max-width: 1100px">
+            ***Stretch goal***: if enough people are using this and willing to pay for this feature: Pot odds
+            considerations so the decision to fold or not (preflop obviously) will be more dynamic by the bot but still be the same decision
+            you
+            would come to on your own. <br><br>
+            Example: you have 66 at BB and a loose player who never 4bets (bot doesn't know this data-point) opens UTG,
+            player after him 3bets to 3x, and then 3 other players flat the 3bet before you.
+            You are getting pot odds to call here and folding would be too nitty. We want to not fold so tight and give
+            the user the chance to decide if this flat is worth it or not depending on how TAG they think UTG is
+            <br><br> Example2: You have k9s at the HJ 10 handed and have your ranges set to a nitty configuration that
+            always folds this. You may elect to flat or limp along this hand if enough players behind also call. Using
+            pot odds consideration would un-click (or re-click) fold button once the threshold to limp-along/flat has
+            been met
+        </li> <br>
+
+    </ul>
+
+    <br>
+    <span style="font-weight: bold"> Testing mode <input id="testing-mode" type="checkbox"> </span> 
+    <br>
+
+    <script src="options.js">
+    </script>
+</body>
